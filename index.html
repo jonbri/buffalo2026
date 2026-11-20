@@ -87,13 +87,16 @@ footer{margin-top:50px;background:var(--blue);color:#fff;text-align:center;paddi
 footer b{color:var(--sun)}
 .go{display:inline-block;font-family:var(--px);font-size:10px;background:var(--red);color:#fff;text-decoration:none;padding:10px 12px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);margin:6px 8px 0 0}
 .go:hover,.go:focus-visible{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink);outline:none}
+.hist h3.sh{font-size:12px;background:var(--blue);color:#fff;display:inline-block;padding:10px 12px;margin:18px 0 14px;border-bottom:4px solid var(--red)}
+.hist .day .d b{font-size:12px;word-break:break-word}
+.hist .day.game .d{background:var(--red)}
 @media(max-width:560px){.day{grid-template-columns:1fr}.day .d{display:flex;gap:10px;align-items:baseline}.clock div{min-width:60px;font-size:16px}body{font-size:16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}}
 </style>
 </head>
 <body>
 <nav><div class="wrap">
-<a href="#top">HOME</a><a href="#games">GAMES</a><a href="#plan">GAME PLAN</a><a href="#eats">EATS</a><a href="#sights">SIGHTS</a><a href="#stay">HOTEL</a><a href="#todo">TO-DO</a><a href="#pack">PACK</a>
+<a href="#top">HOME</a><a href="#games">GAMES</a><a href="#plan">GAME PLAN</a><a href="#eats">EATS</a><a href="#sights">SIGHTS</a><a href="#drive">DRIVE</a><a href="#stay">HOTEL</a><a href="#history">HISTORY</a><a href="#weather">WEATHER</a><a href="#todo">TO-DO</a><a href="#pack">PACK</a>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
@@ -162,6 +165,30 @@ footer b{color:var(--sun)}
 </div>
 </section>
 
+<section id="drive">
+<h2>🚗 THE DRIVE</h2>
+<p>This route skips Washington, DC and I-95 entirely by going west through the mountains. Most drivers report roughly 11 hours total from the Triangle, about the same as the route through DC and without the Beltway traffic. Always check live traffic and weather before you go.</p>
+<div class="day"><div class="d">FRI<b>20</b>NOV</div><div class="c"><strong>Day 1: Cary ➜ Charleston, WV (about 6 hrs)</strong>
+<ul>
+<li>I-40 West toward Greensboro, then US-52 North / I-74 to Mount Airy, NC.</li>
+<li>I-77 North through Virginia (Fancy Gap, Wytheville, Bluefield) and into West Virginia.</li>
+<li>Stop overnight near Charleston, WV. <b>Book the hotel ahead.</b></li>
+</ul><a class="go" href="https://www.google.com/maps/dir/Cary,+NC/Mount+Airy,+NC/Charleston,+WV" target="_blank" rel="noopener">OPEN DAY 1 MAP</a></div></div>
+<div class="day"><div class="d">SAT<b>21</b>NOV</div><div class="c"><strong>Day 2: Charleston ➜ Buffalo (about 5.5 hrs)</strong>
+<ul>
+<li>I-79 North through West Virginia and past Pittsburgh to Erie, PA.</li>
+<li>I-90 East along Lake Erie into Buffalo, then to the hotel at 4600 Genesee St.</li>
+<li>Check-in starts at 3:00 PM, then the Bills Store and Duff’s.</li>
+</ul><a class="go" href="https://www.google.com/maps/dir/Charleston,+WV/Morgantown,+WV/Erie,+PA/4600+Genesee+St,+Buffalo,+NY+14225" target="_blank" rel="noopener">OPEN DAY 2 MAP</a></div></div>
+<div class="day game"><div class="d">FRI<b>27</b>NOV</div><div class="c"><strong>Going home, day 1: Buffalo ➜ Charleston, WV</strong>
+<ul><li>Check out by 11:00 AM. Reverse the route: I-90 West to Erie, then I-79 South.</li></ul>
+<a class="go" href="https://www.google.com/maps/dir/4600+Genesee+St,+Buffalo,+NY+14225/Erie,+PA/Morgantown,+WV/Charleston,+WV" target="_blank" rel="noopener">OPEN MAP</a></div></div>
+<div class="day game"><div class="d">SAT<b>28</b>NOV</div><div class="c"><strong>Going home, day 2: Charleston ➜ Cary</strong>
+<ul><li>I-77 South to Mount Airy, then US-52 / I-74 and I-40 East back to Cary.</li></ul>
+<a class="go" href="https://www.google.com/maps/dir/Charleston,+WV/Mount+Airy,+NC/Cary,+NC" target="_blank" rel="noopener">OPEN MAP</a></div></div>
+<p class="fun">Late November: the mountain stretches on I-77 (Fancy Gap) and I-79 can have fog or snow, so keep the tires, scarf and snacks handy.</p>
+</section>
+
 <section id="stay">
 <h2>🏨 HOME BASE</h2>
 <div class="card">
@@ -169,9 +196,24 @@ footer b{color:var(--sun)}
   <p class="meta"><b>4600 Genesee St, Buffalo, NY 14225</b><br>Sat, Nov 21 – Fri, Nov 27 (6 nights)<br>Deluxe Double Room, 2 double beds<br>Check-in from <b>3:00 PM</b> • Check-out by <b>11:00 AM</b></p>
   <p class="fun">Wingnutz is in the same building, so the post-game wings are a short walk.</p>
 </div>
+
+</section>
+
+<section id="history" class="hist">
+<h2>📜 BUFFALO HISTORY</h2>
+<h3 class="sh">THE CITY OF GOOD NEIGHBORS</h3>
+<div id="hc"></div>
+<h3 class="sh">THE BUFFALO BILLS</h3>
+<div id="hb"></div>
+</section>
+
+<section id="weather">
+<h2>🌨️ BUFFALO WEATHER</h2>
 <div class="card">
-  <h3>THE DRIVE</h3>
-  <p class="meta"><b>Out:</b> Fri Nov 20 and Sat Nov 21, Cary ➜ Buffalo. <b>Back:</b> Fri Nov 27 and Sat Nov 28, Buffalo ➜ Cary. Two days each way, so pack the snacks and the playlist (“Shout” is required).</p>
+  <h3>CHECK BEFORE YOU GO</h3>
+  <p class="meta">Late November in Buffalo can mean anything from sunshine to lake-effect snow. Check the forecast the night before each outing, and before game days and the drive.</p>
+  <a class="go" href="https://forecast.weather.gov/MapClick.php?CityName=Buffalo&amp;state=NY&amp;site=BUF" target="_blank" rel="noopener">BUFFALO FORECAST</a>
+  <a class="go" href="https://www.weather.gov/buf/" target="_blank" rel="noopener">NWS BUFFALO OFFICE</a>
 </div>
 </section>
 
@@ -224,8 +266,34 @@ const FOOD=[
 ];
 document.getElementById('food').innerHTML=FOOD.map(f=>`<div class="card"><h3>${f[0]}<span>${f[1]}</span></h3><p class="meta">${f[2].replace(/\n/g,'<br>')}</p><p class="fun">${f[3]}</p></div>`).join('');
 
+const HC=[
+["1804","Surveyor Joseph Ellicott lays out the village with streets radiating from a central point, a plan modeled on Washington, DC. Where the name “Buffalo” came from is still argued: Buffalo Creek, or perhaps a French “beau fleuve” (beautiful river)."],
+["1813","British forces burn the village during the War of 1812. Residents rebuild quickly."],
+["1825","The Erie Canal opens with Buffalo as its western end. Grain, goods and settlers pour through, and Buffalo becomes one of the great grain-milling ports in the world. Buffalo is incorporated as a city in 1832."],
+["1896","Hydroelectric power from Niagara Falls reaches Buffalo, one of the first big cities to run on it. That’s why it earned the nickname “City of Light.”"],
+["1901","The Pan-American Exposition lights up the city. President William McKinley is shot there in September and dies days later; Theodore Roosevelt takes the oath of office in Buffalo."],
+["1900s","Buffalo grows into one of the biggest cities in the US, with steel, grain, railroads and a skyline of landmark architecture, from the Guaranty Building to the art deco City Hall (1931) and Frank Lloyd Wright’s Darwin Martin House. Frederick Law Olmsted designs its park system."],
+["1950s","The population peaks around 580,000. The St. Lawrence Seaway (1959) lets ships bypass Buffalo, and heavy industry slides, making the city a Rust Belt icon."],
+["1964","The wing is born at the Anchor Bar, as the story goes. It’s “chicken wings” to locals, and beef on weck is the other classic."],
+["1970s","The Sabres join the NHL (1970), and the Blizzard of ’77 buries the region in snow. Buffalo shrugs and keeps going."],
+["TODAY","The Erie Canal’s old harbor is now Canalside, where you’ll skate on Tuesday. Buffalo is a city of music, architecture, breweries and people who really will shovel your driveway."]
+];
+const HB=[
+["1960","Ralph Wilson, a Detroit businessman, founds the Bills as a charter member of the American Football League. The team revives the Buffalo Bills name, and plays at War Memorial Stadium, nicknamed “The Rockpile.”"],
+["1964-65","Back-to-back AFL championships under Coach Lou Saban, with QB Jack Kemp and fullback Cookie Gilchrist."],
+["1970-73","The AFL merges into the NFL. In 1973 the Bills move into a new stadium in Orchard Park, and O.J. Simpson becomes the first player to rush for 2,000 yards in a season."],
+["1990-93","Coach Marv Levy’s K-Gun no-huddle offense takes off with Jim Kelly, Thurman Thomas, Andre Reed and Bruce Smith. The Bills reach four straight Super Bowls, a record that still stands. They lose all four, including “Wide Right” in 1991 (20-19)."],
+["1993","“The Comeback”: down 35-3 to Houston in a playoff game, the Bills rally behind backup QB Frank Reich and win 41-38 in overtime."],
+["2000-16","A 17-season playoff drought tests the faithful. “Bills Mafia” is born, complete with table-smashing and the “Shout” singalong."],
+["2014","Founder Ralph Wilson dies, and Terry and Kim Pegula buy the team."],
+["2017-18","Under Coach Sean McDermott, the Bills end the drought. In 2018 they draft QB Josh Allen with the seventh overall pick."],
+["2023","Safety Damar Hamlin collapses in a game and is revived on the field. He recovers, and Buffalo rallies around him."],
+["2026","Joe Brady replaces McDermott as head coach, and the Bills open a brand-new Highmark Stadium across the street from the old one that stood from 1973 to 2025. You’ll be there for it. Still chasing that first Super Bowl: Billieve!"]
+];
+function hist(id,a,cls){document.getElementById(id).innerHTML=a.map((x,i)=>`<div class="day${cls&&i%2?'':''}"><div class="d"><b>${x[0]}</b></div><div class="c">${x[1]}</div></div>`).join('')}
+hist('hc',HC);hist('hb',HB);
 const REM=["Contact the kids’ teachers so they can leave early on Friday (Nov 20)","Buy Hockey Hall of Fame tickets online (Wed, in the morning)","Make reservations for 911 Tavern (Mon, in the morning)","Invite Michael to join us at Gabriel’s Gate"];
-const PACK=["Buffalo ice skating (skates!)","Passports","Jerseys (hockey and football)","Pills|Duo|Prop|Traz|Pepsid","Cash","Air in tires","Shoes","Crocs","Boots","Scarf","Black winter hat","Ice skates","Laptop"];
+const PACK=["Buffalo ice skating (skates!)","Passports","Jerseys (hockey and football)","Pills|Duo|Prop|Traz|Pepsid","Cash","Air in tires","Shoes","Crocs","Boots","Scarf","Black winter hat","Ice skates","Laptop","Phone charger","Phone bank","Debit card","Music","Glasses"];
 let store={};
 try{store=JSON.parse(localStorage.getItem('bills-trip')||'{}')}catch(e){}
 function save(){try{localStorage.setItem('bills-trip',JSON.stringify(store))}catch(e){}}
